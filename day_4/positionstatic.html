@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position static</title>
+    <style>
+        .static{
+            position: static;
+            margin: 5px;
+            border: 2px solid red;
+            height: 050px;
+            width: 50px;
+            float: left;
+            text-align: center;
+            
+        }
+        #box1{
+            position: relative;
+            top: 40px;
+            left: 80px;
+        }   
+        #box2{
+            position: sticky;
+            top: 30px;
+            border: 2px dashed black;
+        }   
+        #box3{
+            position: fixed;
+            left: 400px;
+            border: 2px dotted black;
+        }   
+        #box4{
+            position: absolute;
+            top: 10px;
+            border: 3px solid red;
+        }
+        
+        .container{
+            border: 2px;
+            background-color: yellow;
+            height: 120vh;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="static" id="box1">1</div>
+    <div class="static" id="box2">2</div>
+    <div class="static" id="box3">3</div>
+    <div class="static" id="box4">4</div>
+    </div>
+</body>
+</html>
+
