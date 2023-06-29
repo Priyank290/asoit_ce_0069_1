@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>event hai bhai</title>
+    <style>
+        .container {
+            cursor: pointer;
+            text-align: center;
+            width: 60%;
+            margin-left: 20%;
+            border: 2px solid black;
+            border-radius: 10px;
+            margin-top:12%;
+            background-color: rgb(241, 225, 204);
+        }
+        h2{
+            font-style: italic;
+        }
+    </style>
+    <script type="text/javascript" src="event.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h2 >An Example Of Event</h2>
+    <button onclick="demoOnclick()">click event </button><br><hr>
+    <button ondblclick="demoOndblclick()">double click event </button><br><hr>
+
+    <b>focus :</b><br>
+    <input type="text" name="" id="txtfocus" placeholder="lakho bhai " onfocus="demoOnfocus()">
+    <hr>
+
+    <b>blur :</b><br>
+    <input type="text" name="" id="txtblur" placeholder="lakho bhai " onfocus="demoOnblur()">
+    <hr>
+
+    <b>keypress</b><br>
+    <input type="text" name="" placeholder="key press karo " onkeypress="demoOnkeypress()">
+    <hr>
+
+    <b>keyup</b><br>
+    <input type="text" name="" placeholder="key up same che  " onfocus="demoOnkeyup()"><hr>
+    </div>
+
+</body>
+
+</html>
