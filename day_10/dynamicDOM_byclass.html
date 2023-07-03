@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dynamic dom</title>
+</head>
+<style>
+     .container{
+        text-align: center;
+     }
+</style>
+<body>
+    <div class="container">
+    <h1>This Is The Dynamic Dom Topic</h1>
+    <h2>Dynamic Dom Using Byclassmethod()</h2>
+
+    <input type="button" value="click to change the yellow color" class="yello1" onclick="bhai2()">
+
+    <input type="button" value="click to change the red color" class="red1" onclick="kuldip2()">
+</div>
+</body>
+<script>
+    function bhai2(){
+        document.getElementsByClassName("yello1")[0].style.backgroundColor="yellow";
+    }
+
+    function kuldip2(){
+        document.getElementsByClassName("red1")[0].style.backgroundColor="red";
+    }
+    
+</script>
+</html>

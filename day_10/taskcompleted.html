@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task </title>
+</head>
+<style>
+    *{
+        background-color: #f2cfdf;
+        /* border: 2px solid black; */
+    }
+    .all{
+        border: 2px solid black;
+    }
+    #container{
+        width: 300px;
+        height: 200px;
+        text-align: center;
+        border: 2px solid black;
+    }
+</style>
+<div class="all">
+<script src="taskcompleted.js"></script>
+<body>
+ 
+    <div id="container">
+        box
+    </div>
+    <br>
+    <hr>
+    <button onclick="demoOnclick1()">Alert inline</button>
+    <button onclick="demoOnclick1()">Alert internal</button>
+    <button onclick="demoOnclick1()">Alert external</button><br><hr>
+
+    <input type="button" value="prompt inline" onclick="prompt('enter the first name')"/>
+    <input type="button" value="prompt internal" onclick="promptfun()"/>
+    <input type="button" value="prompt external" onclick="prompt('enter the first name')"/>
+    <br><hr>
+
+    <button onclick="demoOnclick2()">confirm inline</button>
+    <button onclick="demoOnclick2()">confirm internal</button>
+    <button onclick="demoOnclick2()">confirm external</button><br><hr>
+
+    <button onclick="demoOnclick4()">yellow background page</button><br><hr>
+    <button onclick="demoOnclick5()">red background page</button><br><hr>
+
+    <input type="color" id="kp1" onchange="colorpicker()"><hr>
+
+    <input type="button" value="change the background-color of box" onclick="divBGchangetobackground()"><hr>
+
+    <input type="color" id="kuldip" onchange="colorpicker2()"><hr>
+</div>
+</body>
+</html>
