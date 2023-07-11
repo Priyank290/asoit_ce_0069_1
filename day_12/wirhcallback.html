@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>with callback</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<style>
+.button{
+    background-color: palevioletred;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 2px 3px;
+    cursor: pointer;
+    }
+</style>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("p").hide("fast", function(){
+      alert("The paragraph is now hidden");
+    });
+  });
+});
+</script>
+</head>
+<body>
+
+<button>Hide</button>
+
+<p>This is a paragraph with little content.</p>
+
+</body>
+</html>
