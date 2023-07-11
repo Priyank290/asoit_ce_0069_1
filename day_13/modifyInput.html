@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change input</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <style>
+        *{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <p>Type something and then click or tab out of the input.</p>
+    <input type="text" value="type something">
+
+    <script>
+        //Use the function argument to modify the value of input box.
+        $("input").on("blur",function() {
+            $(this).val(function(i, val){
+                return val.toUpperCase();
+            })
+        })
+    </script>
+</body>
+</html>

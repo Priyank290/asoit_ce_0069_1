@@ -1,0 +1,14 @@
+$("document").ready(function(){
+    $("#TxtTestFocus").focus(function(){
+        $(this).css("background-color","red");
+    });
+    $("#TxtTestBlur").blur(function(){
+        $(this).css("background-color","yellow");
+    });
+    $("#TxtTestKeyPress").keypress(function(){
+        alert($(this).val());
+    });
+    $("#TxtTestKeyup").keyup(function(){
+        alert($(this).val());
+    });
+});
