@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>regex in js</title>
+  </head>
+  <body>
+    <center>
+      <h1>
+        <b><i>Regex use in js</i></b>
+      </h1>
+    </center>
+
+    <script>
+      //regex reference use in to replace multiple word in a string
+      let reg = /Catholic/g;
+
+      let b =
+        "Lorem Catholic dolor sit amet, consetetur Catholic elit. Totam inventore rem Catholic eque iure dolorem";
+
+      a = b.replace("Catholic", "hindu");
+      document.write(a);
+
+      document.write("<hr/><br>", b.replace(reg, "hindu"));
+    </script>
+  </body>
+</html>

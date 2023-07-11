@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Regex example</title>
+  </head>
+  <body>
+    <center>
+      <h1>
+        <b>
+          <i> Regex Example </i>
+        </b>
+      </h1>
+    </center>
+    <script>
+      const regex = /Catholic/g;
+      const str1 =
+        "Nory was a Catholic because her mother was a Catholic, and Norys's mother";
+      var regex1 = /nory/i;
+      var output = regex1.exec(str1);
+      document.write("<br/>", output);
+      console.log(output);
+      //test() method
+      var matchcase = regex1.test(str1);
+      document.write("<br/>", matchcase);
+
+      //Another method
+
+      let txt = "WHAT what what what this this  this 54865988!!!!";
+      let result = txt.match(/[0-9]/g);
+      document.write("<br/>", result);
+    </script>
+  </body>
+</html>
