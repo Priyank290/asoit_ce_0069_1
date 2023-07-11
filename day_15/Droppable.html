@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Droppable</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js" integrity="sha512-57oZ/vW8ANMjR/KQ6Be9v/+/h6bq9/l3f0Oc7vn6qMqyhvPd1cvKBRWWpzu0QoneImqr2SkmO4MSqU+RpHom3Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            $("#draggable").draggable();
+
+            $("#droppable").droppable({
+                accept: "#draggable",
+                drop:function(event, ui) {
+                    $(this).addClass("MyCls").find("p").html("Done....");
+                }
+            });
+        });
+    </script>
+    <style>
+        .ui-widget-content{
+            background: crimson;
+            border: 1px solid gray;
+            color: #000000;
+            font-weight: bold;
+        }
+        .ui-widget-header{
+            background: yellow;
+            border: 2px solid gray;
+            color: #000000;
+            font-weight: bold;
+        }
+        .mycls{
+            background-color: salmon;
+            color: #ffff;
+        }
+        #draggable{
+            background: rgba(157, 95, 107, 0.519);
+            width: 200px;
+            height: 200px;
+            padding: 10px;
+        }
+        #droppable{
+        background: rgba(194, 64, 150, 0.578);
+            width: 400px;
+            height: 400px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="draggable" class="ui-widget-content">
+        <p>Drag me to my target</p>
+      </div>
+       <hr/>
+      <div id="droppable" class="ui-widget-header">
+        <p>Drop here</p>
+      </div>
+    
+</body>
+</html>
