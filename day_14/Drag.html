@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Draggable</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js" integrity="sha512-57oZ/vW8ANMjR/KQ6Be9v/+/h6bq9/l3f0Oc7vn6qMqyhvPd1cvKBRWWpzu0QoneImqr2SkmO4MSqU+RpHom3Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("#mydiv").draggable();
+
+            $("#myhomediv span").draggable({
+                containment:"#myhomediv"
+            });
+            $("#myhorizontaldiv span").draggable({
+                axis:"x"
+            });
+            $("#myverticaldiv span").draggable({
+                axis:"y"
+            });
+            $("#mytimediv span").draggable({
+                distance: 200
+            });
+            $("#fixpxdiv span").draggable({
+                deley: 3000
+            });
+
+
+        });
+    </script>
+    <style>
+        div{
+            background: rgba(196, 57, 175, 0.52);
+            width: 200px;
+            height: 200px;
+            padding: 10px;
+        }
+        #fixpxdiv{
+            background: rgba(197, 38, 165, 0.651);
+            width: 400px;
+            height: 200px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="mydiv">Hello!!_Drag</div><hr/>
+    <div id="myhomediv"><span>I can move content only in div</span></div><hr/>
+    <div id="myhorizontaldiv"><span>I can move only horizontly_DragHorizintal</span></div><hr/>
+    <div id="myverticaldiv"><span>I can move only verticaly_DragVertical</span></div><hr/>
+    <div id="mytimediv"><span>I can move after 3 second_Drag After 3sec</span></div><hr/>
+    <div id="fixpxdiv"><span>I can move only after 200px_Drag Aftre 200px</span></div>
+</body>
+</html>
