@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Personal Portfolio Website to showcase my front end web developer skills.">
+        <meta name="keywords" content="Portfolio, Sapthagiri College Of Engineering, front-end web developer, SEO, netlify.app, shyamg, HTML5, CSS3, JavaScript, Bootstrap">
+        <meta name="author" content="shyamg">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:title" content="priyank">
+        <meta property="og:description" content="This website serves
+        as a window into my professional journey and
+        showcases my passion for creativity, innovation, and
+        problem-solving.">
+        <meta property="og:image" content="pics\icons8-naruto-doodle-120.png">
+        <meta property="og:url" content="https://priyank.netlify.app/#">
+        <title>priyank</title>
+
+        <!-- bootstrap -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+            crossorigin="anonymous">
+
+        <!-- bootstrap js -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+            crossorigin="anonymous"></script>
+
+        <!-- fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap"
+            rel="stylesheet">
+
+        <link
+            href="https://fonts.googleapis.com/css2?family=ABeeZee&family=Gloria+Hallelujah&display=swap"
+            rel="stylesheet">
+
+        <!-- css file -->
+        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" type="image/x-icon"
+            href="letter_p_PNG83.png">
+
+    </head>
+
+    <!-- https://drive.google.com/file/d/1-uP_WQPEHEijsOPtSJ4-WmYsHgyIuG8H/view?usp=share_link -->
+    <body class="lightmode">
+
+        <div class="customPopup">
+            <div class="popup">
+                <h3>
+                    1.Press the Sun for DarkMode <br>
+                    2.On chrome Zoom 75%.
+                    <p>--Thank You--</p>
+                </h3>
+                <button class="btnPop" onclick="popupClicked()">Ok</button>
+            </div>
+        </div>
+
+        <div id="Home">
+
+            <nav class="navbar navbar-expand-lg ">
+
+                <a class="navbar-brand ms-2" href="#">
+                    <img onclick="darkmodeFun()" alt="Darkmode"
+                        src="pics\icons8-sun.gif"
+                        class="nav-link navlinks">
+                </a>
+
+                <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto me-5">
+                        <li class="nav-item">
+                            <a class="nav-link navlinks " href="#Home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navlinks " href="#aboutme">About Me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navlinks " href="#features">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navlinks " href="#project">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navlinks " href="#footer">ContactMe</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+
+            <div class="container-fluid">
+
+                <div class="row frontpagecontent">
+
+                    <div class="col-lg-6 col1content hidden">
+                        <h1>
+                            Hi,<br>
+                            I'm <span>P</span>riyank. <span></span><br>
+
+                        </h1>
+                        <h2>
+                            Full-stack Web Developer
+                        </h2><br>
+                        <p>
+                            I am pursuing B.Tech in Computer Engineering from Silver Oak University. I am enthusiastic person to learn new something about my new world. Currently, i am fresher in Back-end developer. i want explore new things in this particular field and i hope things lead by you will give me opportunity to grow with it.
+                        </p>
+                        <div class="download_div">
+                            <div class="button">
+                                <button 
+                                onclick="downloadFun() ">Resume</a>
+                                </button>
+                            </div>
+                            <div class="links">
+                            <img onclick="github()" src="pics\github (1).png" alt="github">
+                            <img onclick="linkedin()" src="pics\linkedin.png" alt="linkedin">
+                            <img onclick="twitter()" src="pics\twitter.png" alt="twitter">
+                            <img onclick="instagram()" src="pics\instagram.png" alt="pics\instagram.png">
+                            </div>
+                            
+                        </div>
+
+                        
+                </div>
+
+                <div class="col-lg-6 col2content hidden">
+                    <img src="my photo.jpg" alt="img">
+                </div>
+            </div>
+        </div>
+
+        <div id="aboutme">
+                <h3 class="hidden">
+                    ABOUT ME
+                    <!-- <span>A</span>
+                    <span>b</b></span>
+                    <span>o</span>
+                    <span>u</span>
+                    <span>t</span>
+                    <span>M</span>
+                    <span>e</span> -->
+                </h3>
+                <hr>
+
+                <div class="row">
+                    <div class="col-lg-4 row-fig hidden">
+                        <img src="pics\congratulation.png"
+                            alt="img">
+                    </div>
+
+                    <div class="col-lg-8 row-text hidden">
+                        <p>
+                            Currently, I am a dedicated student at Silver oak University
+                            , where I am pursuing my
+                            bachelor's degree in Information Science And Engineering.
+                            The college has provided me with an excellent
+                            platform to delve deeper into the world of
+                            technology and expand my knowledge in front-end
+                            development.
+                        </p>
+                    </div>
+                </div> <br>
+                <div class="row">
+                    <div class="col-lg-4 row-fig hidden">
+                        <img class="featuresimg" src="pics\college.png"
+                            alt="img">
+                    </div>
+
+                    <div class="col-lg-8 row-text hidden">
+                        <p>
+                            After successfully completing my schooling, I
+                            pursued my pre-university education at silver Composite
+                            Pre-University College. During this phase, I
+                            further honed my critical thinking and
+                            problem-solving skills, preparing myself for the
+                            challenges of higher education.
+                        </p>
+                    </div>
+                </div> <br>
+
+                <div class="row ">
+                    <div class="col-lg-4 row-fig hidden">
+                        <img class="featuresimg" src="pics\school.png"
+                            alt="img">
+                    </div>
+
+                    <div class="col-lg-8 row-text hidden">
+                        <p>
+                            I completed my primary and secondary education at
+                            Oxford High School, where I developed a strong
+                            foundation in various subjects. These formative
+                            years instilled in me a love for learning and
+                            provided me with a well-rounded education.
+                            
+                        </p>
+                    </div>
+                </div>
+
+        </div>
+
+        <div id="features">
+            <h3 class="hidden">
+                <span>S</span>
+                <span>k</span>
+                <span>i</span>
+                <span>l</span>
+                <span>l</span>
+                <span>s</span>
+            </h3>
+            <div class="row">
+                <div class="col-lg-6 col-md-6 hidden">
+                    <img src="pics\html.png" alt="html">
+                    <h3>
+                        HTML5
+                    </h3>
+                </div>
+                <div class="col-lg-6 col-md-6 hidden">
+                    <img src="pics\css-3.png" alt="css">
+                    <h3>
+                        CSS3
+                    </h3>
+                </div>
+                <div class="col-lg-6 col-md-6 hidden">
+                    <img src="pics\js.png" alt="javascript">
+                    <h3>
+                        JavaScript
+                    </h3>
+                </div>
+                <div class="col-lg-6 col-md-6 hidden">
+                    <img src="pics\science.png"
+                        alt="react js">
+
+                    <h3>
+                        React.js
+                    </h3>
+                </div>
+                <div class="col-lg-6 col-md hidden">
+                    <img src="pics\sass.png" alt="SASS">
+                    <h3>
+                        SASS
+                    </h3>
+                </div>
+                <div class="col-lg-6 col-md hidden">
+                    <img src="pics\c-.png" alt="c++">
+                    <h3>
+                        C++
+                    </h3>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="project">
+            <h3 class="hidden">
+                <span>P</span>
+                <span>r</span>
+                <span>o</span>
+                <span>j</span>
+                <span>e</span>
+                <span>c</span>
+                <span>t</span>
+                <span>s</span>
+            </h3>
+            <div class="row">
+                <div class="col-lg-4 hidden">
+                    <div class="card ">
+                        <div>
+                            <h3>
+                                portfolio
+                            </h3>
+                        </div>
+                        <div class="text">
+                            <h4>
+                                This is a portfolio
+                                website contains pokemon names , images.I've
+                                used React.js
+                                <!-- , PokeAPI and pure CSS for styling. -->
+
+                            </h4>
+                        </div>
+
+
+                        <div class="plink">
+                            <!-- <a 
+                            href="https://pokedex-by-shyam.netlify.app/ "
+                            target="_blank">Link</a> -->
+                            <a 
+                            href="https://github.com/shyamg090/Pokedex-React-project"
+                            target="_blank">Github</a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-4 hidden">
+                    <div class="card">
+                        <div>
+                            <h3>
+                               calculator 
+                            </h3>
+                        </div>
+                        <div class="text">
+                            <h4> This is a calculator
+                                website, I've just used HTML,CSS and Django
+                                its not functional but I'll work on that soon!!.
+                            </h4>
+                        </div>
+
+                        <div class="plink">
+                            <!-- <a 
+                            href="https://foodcarti.netlify.app/ "
+                            target="_blank">Link</a> -->
+                            <a 
+                            href="https://github.com"
+                            target="_blank">Github</a>
+                        </div> 
+
+                    </div>
+                </div>
+                <div class="col-lg-4 hidden">
+                    <div class="card">
+                            <div>
+                                <h3 >
+                                    quiz website
+                                </h3>
+                            </div>   
+                            <div class="text">
+                                <h4>This is a quiz website that is
+                                    built using React.JS and pure CSS.
+                                    This is responsive.
+                                </h4>
+                            </div>                             
+                            <div class="plink">
+                                <!-- <a 
+                                href="https://todo-by-shyam.netlify.app/ "
+                                target="_blank">Link</a> -->
+                                <a 
+                                href="https://github.com"
+                                target="_blank">Github</a>
+                            </div>
+                             
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="row">
+            <div class="col-lg-4 ">
+                <div class="card">
+                    <div class="card-img">
+                        <img class="projectimg" src="" alt="">
+                    </div>
+                    <div class="card-body">
+                        <h3> 
+                            
+                        </h3>
+                    </div>
+                </div>
+            </div> -->
+            <!-- <div class="col-lg-4 ">
+                <div class="card">
+                    <div class="card-img">
+                        <img class="projectimg" src="" alt="pic">
+                    </div>
+                    <div class="card-body">
+                        <h3> 
+                            
+                        </h3>
+                    </div>
+                </div>
+            </div> -->
+            <!-- <div class="col-lg-4 ">
+                <div class="card">
+                    <div class="card-img">
+                        <img class="projectimg" src="" alt="">
+                    </div>
+                    <div class="card-body">
+                        <h3> 
+                           
+                        </h3>
+                    </div>
+                </div>
+            </div>           -->
+        </div>
+    </div>
+
+    <footer id="footer">
+        <div class="row">
+            <div class="col">
+
+                    <img onclick="linkedin()" class="footimg" src="pics\linkedin.png" alt="linkedin">
+                    <img onclick="twitter()" class="footimg" src="pics\twitter.png" alt="twit">
+                    <img onclick="github()" class="footimg" src="pics\github-sign.png" alt="github">
+                    <img onclick="instagram()" class="footimg" src="pics\instagram.png" alt="insta">
+
+            </div>
+            <p>Copyright _Priyank</p>
+
+        </footer>
+
+        <script src="index.js"></script>
+    </body>
+</html>
